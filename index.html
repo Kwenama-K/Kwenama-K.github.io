@@ -2,37 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Kwenama Kunene | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:800,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/Style/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background-shapes">
-    <div class="rectangle"></div>
-    <div class="circle"></div>
-    <div class="line"></div>
+  <div class="cover">
+    <div class="cover-accent"></div>
+    <div class="cover-content">
+      <h1 class="name">Kwenama Kunene</h1>
+      <p class="email"><a href="mailto:kwenamaa.kunene@gmail.com">kwenamaa.kunene@gmail.com</a></p>
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="about">About Me</button>
+        <button class="tab-btn" data-tab="info">Information</button>
+        <button class="tab-btn" data-tab="projects">My Projects</button>
+      </nav>
+    </div>
   </div>
+
   <main>
-    <section class="cover">
-      <h1>Kwenama Kunene</h1>
-      <p class="email">kwenamaa.kunene@gmail.com</p>
-    </section>
-    <section class="about-me">
+    <section id="about" class="tab-content active">
       <h2>About Me</h2>
       <p>
-        <!-- Add your introduction here -->
-        I am a passionate professional eager to showcase my skills and experience. (Edit this section with your bio!)
+        <!-- Add your about me text here -->
+        Welcome to my portfolio. I am Kwenama Kunene, passionate about design, technology, and bringing ideas to life.
       </p>
     </section>
-    <section class="information">
+    <section id="info" class="tab-content">
       <h2>Information</h2>
-      <ul>
-        <li>Location: <!-- e.g., City, Country --></li>
-        <li>Profession: <!-- e.g., Web Developer, Designer --></li>
-        <li>Other: <!-- e.g., LinkedIn, GitHub links --></li>
-      </ul>
+      <p>
+        <!-- Add information details here -->
+        Here you can find more details about my education, experience, and skills.
+      </p>
+    </section>
+    <section id="projects" class="tab-content">
+      <h2>My Projects</h2>
+      <div class="projects-placeholder">
+        <!-- Add your projects here as cards or a list -->
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Short project description goes here.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <label>
+          Your Email:
+          <input type="email" name="user_email" required>
+        </label>
+        <label>
+          Your Phone Number:
+          <input type="tel" name="user_phone">
+        </label>
+        <label>
+          Comment/Service Request:
+          <textarea name="user_comment" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
