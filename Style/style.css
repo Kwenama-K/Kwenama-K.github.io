@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.background-shapes {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.rectangle {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 30vw;
+  height: 20vh;
+  background: #222;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.circle {
+  position: absolute;
+  bottom: 15vh;
+  right: 8vw;
+  width: 150px;
+  height: 150px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.line {
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  width: 100vw;
+  height: 8px;
+  background: #fff;
+  opacity: 0.08;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.cover {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.cover h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 0 0 10px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #fff 70%, #888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cover .email {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+section {
+  background: rgba(30,30,30,0.93);
+  border-radius: 18px;
+  margin-bottom: 32px;
+  padding: 32px 24px 24px 24px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+}
+
+section h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.information ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.information li {
+  font-size: 1.05rem;
+  line-height: 2.0;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cover h1 {
+    font-size: 2.1rem;
+  }
+  main {
+    padding: 28px 6px;
+  }
+  section {
+    padding: 18px 10px 10px 10px;
+  }
+  .rectangle, .circle {
+    display: none;
+  }
+}
