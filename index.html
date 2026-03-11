@@ -26,34 +26,34 @@
 
   <main>
     <!-- About Section -->
-    <section id="about" class="tab-content active">
-      <h2>About Me</h2>
-      <p>
-        Hello there! I'm <strong>Kwenama Kunene</strong>. 
-        I'm a passionate Software Development student who is keen on learning and growing in the field of software development. 
-        I am a hard worker and I am always eager to take on new challenges to improve my skills and contribute to exciting projects.
-      </p>
-      </section>
-      <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <label>
-          Your Email:
-          <input type="email" name="user_email" required>
-        </label>
-        <label>
-          Your Phone Number:
-          <input type="tel" name="user_phone">
-        </label>
-        <label>
-          Comment/Service Request:
-          <textarea name="user_comment" rows="4" required></textarea>
-        </label>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-    
+<section id="about" class="tab-content active">
+  <h2>About Me</h2>
+  <p>
+    Hello there! I'm <strong>Kwenama Kunene</strong>. 
+    I'm a passionate Software Development student who is keen on learning and growing in the field of software development. 
+    I am a hard worker and I am always eager to take on new challenges to improve my skills and contribute to exciting projects.
+  </p>
+
+  <!-- Contact Section (moved inside About Me tab) -->
+  <div class="contact-wrapper">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <label>
+        Your Email:
+        <input type="email" name="user_email" required>
+      </label>
+      <label>
+        Your Phone Number:
+        <input type="tel" name="user_phone">
+      </label>
+      <label>
+        Comment/Service Request:
+        <textarea name="user_comment" rows="4" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
     <!-- Information Section -->
     <section id="info" class="tab-content">
